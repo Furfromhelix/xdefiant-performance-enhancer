@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0a0a0f"/>
+<stop offset="55%" stop-color="#160b12"/>
+<stop offset="100%" stop-color="#1c0a0f"/>
+</linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#ff1f3d" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#ff1f3d" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#ff2e4d" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#ff2e4d" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="55%" stop-color="#ff4f66"/>
+<stop offset="100%" stop-color="#ff1f3d"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+<circle cx="950" cy="120" r="260" fill="url(#glow)"/>
+<rect x="0" y="0" width="1200" height="360" fill="url(#scan)"/>
+
+<!-- circuit-esque grid lines -->
+<g stroke="#3a1420" stroke-width="1" opacity="0.5">
+<line x1="0" y1="60" x2="1200" y2="60"/>
+<line x1="0" y1="300" x2="1200" y2="300"/>
+<line x1="200" y1="0" x2="200" y2="360"/>
+<line x1="1000" y1="0" x2="1000" y2="360"/>
+</g>
+
+<!-- glitch fragments -->
+<g opacity="0.7">
+<rect x="60" y="55" width="90" height="6" fill="#ff2e4d"/>
+<rect x="180" y="55" width="30" height="6" fill="#ffffff"/>
+<rect x="900" y="290" width="120" height="5" fill="#ff2e4d"/>
+<rect x="1040" y="290" width="40" height="5" fill="#ffffff"/>
+</g>
+
+<!-- crosshair emblem right side -->
+<g transform="translate(1000,180)" stroke="#ff2e4d" stroke-width="2" fill="none" opacity="0.85">
+<circle r="70"/>
+<circle r="45"/>
+<line x1="-95" y1="0" x2="-80" y2="0"/>
+<line x1="95" y1="0" x2="80" y2="0"/>
+<line x1="0" y1="-95" x2="0" y2="-80"/>
+<line x1="0" y1="95" x2="0" y2="80"/>
+</g>
+<circle cx="1000" cy="180" r="4" fill="#ff2e4d"/>
+
+<!-- angular tactical shard shapes -->
+<polygon points="850,40 1150,40 1080,140 900,140" fill="#2a0d15" opacity="0.55"/>
+<polygon points="880,220 1160,220 1120,320 940,320" fill="#1c0a10" opacity="0.6"/>
+<polyline points="60,320 260,320 300,270 500,270" stroke="#ff2e4d" stroke-width="2" opacity="0.5" fill="none"/>
+<polyline points="60,300 220,300 250,260" stroke="#ffffff" stroke-width="1" opacity="0.3" fill="none"/>
+
+<!-- headline -->
+<text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="70" font-weight="700" fill="url(#headGrad)" letter-spacing="1">
+<tspan x="60" y="150" textLength="820" lengthAdjust="spacingAndGlyphs">XDefiant Exploit</tspan>
+<tspan x="60" y="228" textLength="480" lengthAdjust="spacingAndGlyphs">Undetected</tspan>
+</text>
+
+<!-- tagline -->
+<text x="62" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#d9b7bf" opacity="0.9">
+<tspan x="62" y="270" textLength="900" lengthAdjust="spacingAndGlyphs">Built for gamers who need a reliable, undetected exploit layer</tspan>
+</text>
+<text x="62" y="298" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#d9b7bf" opacity="0.9">
+<tspan x="62" y="298" textLength="220" lengthAdjust="spacingAndGlyphs">for XDefiant matches.</tspan>
+</text>
+
+<!-- status tag -->
+<g>
+<rect x="62" y="45" width="150" height="26" rx="4" fill="#3a0f18" stroke="#ff2e4d" stroke-width="1"/>
+<circle cx="78" cy="58" r="4" fill="#3dff8a"/>
+<text x="92" y="63" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#ffdfe4">STATUS: ONLINE</text>
+</g>
+</svg>
